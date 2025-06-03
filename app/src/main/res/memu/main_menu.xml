@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 新建笔记按钮 -->
+    <item
+        android:id="@+id/action_add"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="新建"
+        app:showAsAction="ifRoom" />
+
+    <!-- 退出登录按钮 -->
+    <item
+        android:id="@+id/action_logout"
+        android:title="退出登录"
+        app:showAsAction="never" />
+</menu>
