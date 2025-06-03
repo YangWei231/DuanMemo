@@ -15,6 +15,10 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var etPassword: EditText
     private lateinit var btnLogin: Button
 
+    // 模拟用户名和密码
+    private val validUsername = "admin"
+    private val validPassword = "123456"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
@@ -42,10 +46,14 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // 模拟登录成功（实际项目中应验证用户名密码）
-            PrefsUtil.setLoggedIn(this, true, username)
-            startMainActivity()
-            finish()
+            // 验证用户名和密码
+            if (username == validUsername && password == validPassword) {
+                PrefsUtil.setLoggedIn(this, true, username)
+                startMainActivity()
+                finish()
+            } else {
+                Toast.makeText(this, "用户名或密码错误", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
