@@ -1,4 +1,4 @@
-package com.example.duanmemo.ui
+package com.example.duanmemo.ui2
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.duanmemo.R
 import PrefsUtil
+import com.example.duanmemo.ui.MainActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -61,6 +62,6 @@ class LoginActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         // 添加淡入淡出动画
-        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+//        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 }

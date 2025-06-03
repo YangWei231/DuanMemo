@@ -17,6 +17,8 @@ import com.example.duanmemo.adapter.NoteAdapter
 import com.example.duanmemo.db.NoteDao
 import Note
 import PrefsUtil
+import com.example.duanmemo.ui2.LoginActivity
+import com.example.duanmemo.ui2.NoteDetailActivity
 
 class MainActivity : AppCompatActivity() {
 

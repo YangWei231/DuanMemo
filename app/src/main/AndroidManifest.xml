@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.NoteDetailActivity"
+            android:name=".ui2.NoteDetailActivity"
             android:label="笔记详情"
             android:theme="@style/Theme.DuanMemo">
         </activity>

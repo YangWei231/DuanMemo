@@ -1,4 +1,4 @@
-package com.example.duanmemo.ui
+package com.example.duanmemo.ui2
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.duanmemo.R
 import com.example.duanmemo.db.NoteDao
 import Note
+import com.example.duanmemo.ui.MainActivity
 
 class NoteDetailActivity : AppCompatActivity() {
 
